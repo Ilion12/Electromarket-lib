@@ -7,7 +7,7 @@
  */
 
 plugins {
-	id 'java'
+    id 'java'
     id 'java-library'
     id 'eclipse'
 }
@@ -17,13 +17,17 @@ targetCompatibility = 1.8
 
 repositories {
     jcenter()
-    
+
     maven { url 'https://jitpack.io' }
+
+    mavenCentral()
 }
 
 dependencies {
-    // Obtenido de https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2.2'
+    
+	api 'com.github.LanyuEStudio:lanyuCommon:v1.0.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -39,12 +43,4 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     archives sourcesJar
     archives javadocJar
-}
-
-tasks.named('test') {
-    useJUnitPlatform()
-}
-
-tasks.named("jar") {
-    enabled = false
 }
