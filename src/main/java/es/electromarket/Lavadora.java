@@ -1,4 +1,4 @@
-package mde.entidades;
+package es.electromarket;
 
 public class Lavadora extends Electrodomestico {
 

@@ -1,4 +1,4 @@
-package mde.entidades;
+package es.electromarket;
 
 import java.util.ArrayList;
 import java.util.List;
