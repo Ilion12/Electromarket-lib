@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'Electromarket-lib'
-include('lib')
+include('app')
