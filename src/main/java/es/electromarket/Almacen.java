@@ -1,35 +1,15 @@
 package es.electromarket;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Almacen {
-	
-	private String localidad;
-	
-	private List<Electrodomestico> stock = new ArrayList<Electrodomestico>();
+public interface Almacen {
 
-	public List<Electrodomestico> getStock() {
-		return stock;
-	}
+	List<ElectrodomesticoImpl> getStock();
 
-	public void setStock(List<Electrodomestico> stock) {
-		this.stock = stock;
-	}
+	void setStock(List<ElectrodomesticoImpl> stock);
 
-	public String getLocalidad() {
-		return localidad;
-	}
+	String getLocalidad();
 
-	public void setLocalidad(String localidad) {
-		this.localidad = localidad;
-	}
+	void setLocalidad(String localidad);
 
-	public Almacen(String localidad, List<Electrodomestico> stock) {
-		super();
-		this.localidad = localidad;
-		this.stock = stock;
-	}
-	
-	
 }
