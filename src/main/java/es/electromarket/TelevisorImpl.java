@@ -20,6 +20,10 @@ public void setNumeroPulgadas(int numeroPulgadas) {
     super(id, marca, modelo, calificacionEnergetica, precio);
     this.numeroPulgadas = numeroPulgadas;
   }
+  
+  public TelevisorImpl() {
+	  
+  }
 
 
 }

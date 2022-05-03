@@ -17,6 +17,10 @@ public abstract class ElectrodomesticoImpl {
 		this.precio = precio;
 	}
 	
+	public ElectrodomesticoImpl() {
+		
+	}
+	
 	
 	public long getId() {
 		return id;

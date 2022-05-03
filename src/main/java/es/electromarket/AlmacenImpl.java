@@ -28,6 +28,10 @@ public class AlmacenImpl {
 	public void setLocalidad(String localidad) {
 		this.localidad = localidad;
 	}
+	
+	public AlmacenImpl() {
+		
+	}
 
 	public AlmacenImpl(String localidad, List<ElectrodomesticoImpl> stock) {
 		super();

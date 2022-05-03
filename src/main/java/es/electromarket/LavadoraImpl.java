@@ -20,5 +20,9 @@ public class LavadoraImpl extends ElectrodomesticoImpl implements Lavadora {
 		super(id, marca, modelo, calificacionEnergetica, precio);
 		this.capacidadCarga = capacidadCarga;
 	}
+	
+	public LavadoraImpl() {
+		
+	}
 
 }
