@@ -16,7 +16,7 @@ public class LavadoraImpl extends ElectrodomesticoImpl implements Lavadora {
 		this.capacidadCarga = capacidadCarga;
 	}
 	
-	public LavadoraImpl(int id, String marca, String modelo, char calificacionEnergetica, double precio, int capacidadCarga) {
+	public LavadoraImpl(long id, String marca, String modelo, char calificacionEnergetica, double precio, int capacidadCarga) {
 		super(id, marca, modelo, calificacionEnergetica, precio);
 		this.capacidadCarga = capacidadCarga;
 	}

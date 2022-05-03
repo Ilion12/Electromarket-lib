@@ -15,7 +15,7 @@ public void setNumeroPulgadas(int numeroPulgadas) {
     this.numeroPulgadas = numeroPulgadas;
   }
 
-  public TelevisorImpl(int id, String marca, String modelo, char calificacionEnergetica, double precio,
+  public TelevisorImpl(long id, String marca, String modelo, char calificacionEnergetica, double precio,
       int numeroPulgadas) {
     super(id, marca, modelo, calificacionEnergetica, precio);
     this.numeroPulgadas = numeroPulgadas;
