@@ -3,28 +3,28 @@ package es.electromarket;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AlmacenImpl implements Almacen {
+public class AlmacenImpl {
 	
 	private String localidad;
 	
 	private List<ElectrodomesticoImpl> stock = new ArrayList<ElectrodomesticoImpl>();
 
-	@Override
+	
 	public List<ElectrodomesticoImpl> getStock() {
 		return stock;
 	}
 
-	@Override
+	
 	public void setStock(List<ElectrodomesticoImpl> stock) {
 		this.stock = stock;
 	}
 
-	@Override
+	
 	public String getLocalidad() {
 		return localidad;
 	}
 
-	@Override
+
 	public void setLocalidad(String localidad) {
 		this.localidad = localidad;
 	}
@@ -34,6 +34,8 @@ public class AlmacenImpl implements Almacen {
 		this.localidad = localidad;
 		this.stock = stock;
 	}
+	
+	
 	
 	
 }

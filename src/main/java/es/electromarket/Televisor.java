@@ -2,8 +2,8 @@ package es.electromarket;
 
 public interface Televisor {
 
-	int getNumeroPulgadas();
+	public int getNumeroPulgadas();
 
-	void setNumeroPulgadas(int numeroPulgadas);
+	public void setNumeroPulgadas(int numeroPulgadas);
 
 }

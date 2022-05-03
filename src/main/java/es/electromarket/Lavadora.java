@@ -2,8 +2,8 @@ package es.electromarket;
 
 public interface Lavadora {
 
-	int getCapacidadCarga();
+	public int getCapacidadCarga();
 
-	void setCapacidadCarga(int capacidadCarga);
+	public void setCapacidadCarga(int capacidadCarga);
 
 }
