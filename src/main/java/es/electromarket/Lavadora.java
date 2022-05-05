@@ -1,9 +1,26 @@
 package es.electromarket;
 
-public interface Lavadora {
+public class Lavadora extends Electrodomestico {
 
-	public int getCapacidadCarga();
+	public Lavadora() {}
+	
+	public Lavadora( String marca, String modelo, char calificacionEnergetica, double precio, int capacidadCarga) {
+		super( marca, modelo, calificacionEnergetica, precio);
+		this.capacidadCarga = capacidadCarga;
+	}
 
-	public void setCapacidadCarga(int capacidadCarga);
+	private int capacidadCarga;
+
+	public int getCapacidadCarga() {
+		return capacidadCarga;
+	}
+
+	public void setCapacidadCarga(int capacidadCarga) {
+		this.capacidadCarga = capacidadCarga;
+	}
+	
+	
+	
+	
 
 }

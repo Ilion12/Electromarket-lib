@@ -1,9 +1,25 @@
 package es.electromarket;
 
-public interface Televisor {
+public class Televisor extends Electrodomestico {
 
-	public int getNumeroPulgadas();
 
-	public void setNumeroPulgadas(int numeroPulgadas);
+  private int numeroPulgadas;
+
+  
+  public int getNumeroPulgadas() {
+    return numeroPulgadas;
+  }
+
+  public void setNumeroPulgadas(int numeroPulgadas) {
+    this.numeroPulgadas = numeroPulgadas;
+  }
+
+  public Televisor(String marca, String modelo, char calificacionEnergetica, double precio,
+      int numeroPulgadas) {
+    super(marca, modelo, calificacionEnergetica, precio);
+    this.numeroPulgadas = numeroPulgadas;
+  }
+  
+  public Televisor() {}
 
 }

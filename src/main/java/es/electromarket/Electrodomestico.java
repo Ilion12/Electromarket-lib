@@ -1,33 +1,24 @@
 package es.electromarket;
 
-public abstract class ElectrodomesticoImpl {
+public abstract class Electrodomestico {
 	
-	private long id;
+
 	private String marca;
 	private String modelo;
 	private char calificacionEnergetica; 
 	private double precio;
 	
-	public ElectrodomesticoImpl(long id, String marca, String modelo, char calificacionEnergetica, double precio) {
-		super();
-		this.id = id;
+	public Electrodomestico( String marca, String modelo, char calificacionEnergetica, double precio) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.calificacionEnergetica = calificacionEnergetica;
 		this.precio = precio;
 	}
 	
-	public ElectrodomesticoImpl() {
+	public Electrodomestico() {
 		
 	}
 	
-	
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
 	public String getMarca() {
 		return marca;
 	}
