@@ -1,14 +1,11 @@
 package es.electromarket;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Almacen {
 
   private String localidad;
-  private List<Electrodomestico> stock = new ArrayList<Electrodomestico>();
-
-
+  private long idAlmacen;
+  
   public String getLocalidad() {
     return localidad;
   }
@@ -16,23 +13,22 @@ public class Almacen {
   public void setLocalidad(String localidad) {
     this.localidad = localidad;
   }
-
-  public List<Electrodomestico> getStock() {
-    return stock;
+  
+  public long getIdAlmacen() {
+	return idAlmacen;
   }
 
-
-  public void setStock(List<Electrodomestico> stock) {
-    this.stock = stock;
+  public void setIdAlmacen(long idAlmacen) {
+	this.idAlmacen = idAlmacen;
   }
 
   public Almacen() {
 
   }
 
-  public Almacen(String localidad, List<Electrodomestico> stock) {
+  public Almacen(String localidad, long idAlmacen) {
     this.localidad = localidad;
-    this.stock = stock;
+    this.idAlmacen = idAlmacen;
   }
 
 }
