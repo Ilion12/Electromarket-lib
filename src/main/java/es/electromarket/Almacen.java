@@ -23,7 +23,6 @@ public class Almacen {
 
 	public Almacen(List<Electrodomestico> stock) {
 		super();
-		;
 		this.stock = stock;
 	}
 	
