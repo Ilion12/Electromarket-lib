@@ -1,10 +1,10 @@
 package es.electromarket;
 
-public class Televisor extends Electrodomestico implements TelevisorInterfaz {
+public class Televisor extends Electrodomestico implements TelevisorInterfaz  {
 
   private int numeroPulgadas;
 
-  @Override
+ @Override
   public int getNumeroPulgadas() {
     return numeroPulgadas;
   }
