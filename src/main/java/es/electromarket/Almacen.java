@@ -1,20 +1,10 @@
 package es.electromarket;
 
-import java.util.Collection;
-
 public class Almacen {
 
   private String localidad;
   private long idAlmacen;
-  private Collection<Electrodomestico> electrodomesticos;
   
-  public Collection<Electrodomestico> getElectrodomesticos() {
-	return electrodomesticos;
-  }
-
-  public void setElectrodomesticos(Collection<Electrodomestico> electrodomesticos) {
-	this.electrodomesticos = electrodomesticos;
-  }
 
   public String getLocalidad() {
     return localidad;
@@ -36,10 +26,9 @@ public class Almacen {
 
   }
 
-  public Almacen(String localidad, long idAlmacen, Collection<Electrodomestico> electrodomesticos) {
+  public Almacen(String localidad, long idAlmacen) {
     this.localidad = localidad;
     this.idAlmacen = idAlmacen;
-    this.electrodomesticos = electrodomesticos;
   }
 
 }
