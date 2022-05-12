@@ -26,9 +26,8 @@ public class Almacen {
 
   }
 
-  public Almacen(String localidad, long idAlmacen) {
+  public Almacen(String localidad) {
     this.localidad = localidad;
-    this.idAlmacen = idAlmacen;
   }
 
 }

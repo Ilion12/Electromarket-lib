@@ -16,9 +16,9 @@ public class Televisor extends Electrodomestico implements TelevisorInterfaz  {
   
   public Televisor() {}
   
-  public Televisor(long id, String marca, String modelo, char calificacionEnergetica, double precio,
+  public Televisor(String marca, String modelo, char calificacionEnergetica, double precio,
       int numeroPulgadas) {
-    super(id, marca, modelo, calificacionEnergetica, precio);
+    super(marca, modelo, calificacionEnergetica, precio);
     this.numeroPulgadas = numeroPulgadas;
   }
   

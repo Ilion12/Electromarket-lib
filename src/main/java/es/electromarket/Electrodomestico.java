@@ -51,8 +51,7 @@ public abstract class Electrodomestico {
 	public Electrodomestico() {
 		
 	}
-	public Electrodomestico(long id, String marca, String modelo, char calificacionEnergetica, double precio) {
-		this.id =id;
+	public Electrodomestico( String marca, String modelo, char calificacionEnergetica, double precio) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.calificacionEnergetica = calificacionEnergetica;
