@@ -2,17 +2,17 @@ package es.electromarket;
 
 public abstract class Electrodomestico {
 	
-	protected String id;
+	protected long id;
 	protected String marca;
 	protected String modelo;
 	protected char calificacionEnergetica; 
 	protected double precio;
 	
-	public String getId() {
+	public long getId() {
 		return id;
 	}
 	
-	public void setId(String id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
