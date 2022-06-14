@@ -3,7 +3,7 @@ package es.electromarket;
 public class Almacen {
 
   private String localidad;
-  private long idAlmacen;
+  private String idAlmacen;
   
 
   public String getLocalidad() {
@@ -14,11 +14,11 @@ public class Almacen {
     this.localidad = localidad;
   }
   
-  public long getIdAlmacen() {
+  public String getIdAlmacen() {
 	return idAlmacen;
   }
 
-  public void setIdAlmacen(long idAlmacen) {
+  public void setIdAlmacen(String idAlmacen) {
 	this.idAlmacen = idAlmacen;
   }
 
